@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-14 22:51:53
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-18 21:51:44
+* @Last Modified time: 2017-09-19 21:42:35
 */
 
 // 'use strict';
@@ -21,7 +21,7 @@ $(function(){
             })
         })
     });
-    $("#section").load("http://10.9.171.178/work/jfs/section.html",function(){
+    $("#section").load("http://10.9.171.178/work/jfs/section.html",{data:new Date().getTime()},function(){
         $(".weixin").mouseover(function(){
             $(".erweima").stop().fadeIn();
         })

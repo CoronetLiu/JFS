@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-15 19:37:55
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-17 12:45:17
+* @Last Modified time: 2017-09-19 21:42:07
 */
 
 .top_inner,.main_inner{
@@ -128,6 +128,7 @@
 #section{
     width:80px;
     position:fixed;
+    z-index:99;
     right:10px;
     bottom:90px;
     background:#fff;
