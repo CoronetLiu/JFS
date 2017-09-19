@@ -1,0 +1,28 @@
+/*
+* @Author: Marte
+* @Date:   2017-09-03 19:34:30
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-18 21:25:00
+*/
+input,html, body, ul, li, ol, dl,div, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
+
+fieldset, c,input{ border:none; }
+
+button{cursor:pointer;}
+
+img{display: block;border:none;}
+
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+
+ul, ol,dl{ list-style:none; }
+
+body { font:13px "Microsoft Yahei", 宋体, Arial, arial-black;/* overflow-y:scroll;*/ overflow-x:hidden;}
+
+a {color:#000000;text-decoration:none; }
+
+a:visited { color:#666; }
+
+/*a:hover, a:active, a:focus { color:#ff8400;}*/
+
+.clearfix::after{content:"";display:block;height:0;clear:both;overflow:hidden;visibility:hidden;}
+

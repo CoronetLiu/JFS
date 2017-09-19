@@ -1,0 +1,301 @@
+/*
+* @Author: Marte
+* @Date:   2017-09-14 22:52:05
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-18 13:32:15
+*/
+
+.top_inner,.banner_inner,.topbrands{
+    width:1200px;
+    margin:0 auto;
+}
+
+#top{
+    background:#000;
+}
+.top_inner{
+    height:100px;
+}
+.top_inner>a img{
+    float:left;
+    margin:18px 0;
+}
+.top_inner .myinfo{
+    float:right;
+    padding-top:15px;
+    width:535px;
+    padding-left:465px
+}
+.top_inner .myinfo li{
+    float:left;
+    color:#a7a7a7;
+    padding:0 10px;
+    border-left:1px solid #5b5b5b;
+    line-height:14px;
+}
+.top_inner .myinfo li a{
+    color:#a7a7a7;
+}
+.top_inner .myinfo .start{
+    border-left:none;
+    position:relative;
+}
+.top_inner .myinfo .start a{
+    float:left;
+    margin:1px 5px;
+}
+.top_inner .myinfo .start .code{
+    display:none;
+    position:absolute;
+    left:-74px;
+    top:8px;
+}
+.top_inner .myinfo li:nth-child(4){
+    padding-left:20px;
+    background:url("img/3.png") no-repeat 8px center;
+}
+.top_inner .myinfo li:nth-child(5){
+    padding-left:25px;
+    background:url("img/20.png") no-repeat 10px center;
+}
+.top_inner .nav{
+    float:left;
+    margin-top:35px;
+    margin-left:50px;
+}
+.top_inner .nav li{
+    float:left;
+    color:#a7a7a7;
+    font-size:14px;
+    padding:0 16px;
+}
+.top_inner .nav li a{
+    float:left;
+    padding:3px 5px;
+    color:#a7a7a7;
+}
+
+.top_inner .search{
+    float:right;
+    margin-top:35px;
+}
+.top_inner .search input{
+    height:25px;
+    width:190px;
+    padding-left:10px;
+    background:#141414;
+    color:#a9a9a9;
+    outline:none;
+}
+.top_inner .search div{
+    float:right;
+    height:25px;
+    width:25px;
+    background:#2b5480 url("img/21.png") no-repeat center center;
+}
+
+#banner{
+    background:#0f0305;
+}
+.banner_inner{
+    position:relative;
+}
+.banner_inner .pic{
+    position:relative;
+    height:400px;
+}
+.banner_inner .pic li{
+    position:absolute;
+    left:0;
+    top:0;
+    opacity:0;
+    transition: all 1s;
+}
+.banner_inner .pic li:nth-child(1){
+    opacity:1;
+}
+.banner_inner .indicator{
+    position:absolute;
+    z-index:5;
+    bottom:10px;
+    left:572px;
+    width:56px;
+    padding:4px 5px;
+    border-radius:10px;
+    background:rgba(204,204,204,0.2);
+}
+.banner_inner .indicator li{
+    float:left;
+    height:12px;
+    width:12px;
+    margin-left:4px;
+    border-radius: 6px;
+    background:#fff;
+    transition: all 1s;
+}
+.banner_inner .indicator li:nth-child(1){
+    margin-left:0;
+}
+.banner_inner .indicator .active{
+    width:24px;
+    background:#7b0f0d;
+}
+
+#main{
+    background:#000;
+    color:#fff;
+}
+.topbrands{
+    padding-top:40px;
+
+}
+.topbrands .topmin{
+    width:180px;
+    height:330px;
+    float:left;
+    background:#fff url("http://www.jufengshang.com/images/2015/industry.jpg") no-repeat center bottom;
+}
+.topbrands .topmin h1{
+    font-size:18px;
+    color:#6b3722;
+    margin-top:20px;
+    padding-left:25px;
+}
+.topbrands .topmin h2{
+    font-size:13px;
+    color:#c4aea6;
+    font-weight:normal;
+    padding-left:25px;
+}
+.topbrands .topmin ul{
+    margin-top:15px;
+}
+.topbrands .topmin ul li{
+    margin-bottom:5px;
+}
+.topbrands .topmin ul li a{
+    display:inline-block;
+    line-height:25px;
+    width:130px;
+    padding-left:50px;
+    color:#666666;
+}
+.topbrands .topmin ul .active a{
+    background-color:#6b3922;
+    color:#fff;
+}
+.topbrands .topmin ul li:nth-child(1) a{
+    background-image:url("http://www.jufengshang.com//images/2015/icon/1.png");
+    background-repeat: no-repeat;
+    background-position:  25px center;
+}.topbrands .topmin ul li:nth-child(2) a{
+    background-image:url("http://www.jufengshang.com//images/2015/icon/2.png");
+    background-repeat: no-repeat;
+    background-position:  25px center;
+}.topbrands .topmin ul li:nth-child(3) a{
+    background-image:url("http://www.jufengshang.com//images/2015/icon/3.png");
+    background-repeat: no-repeat;
+    background-position:  25px center;
+}.topbrands .topmin ul li:nth-child(4) a{
+    background-image:url("http://www.jufengshang.com//images/2015/icon/4.png");
+    background-repeat: no-repeat;
+    background-position:  25px center;
+}.topbrands .topmin ul li:nth-child(5) a{
+    background-image:url("http://www.jufengshang.com//images/2015/icon/5.png");
+    background-repeat: no-repeat;
+    background-position:  25px center;
+}
+.topbig{
+    float:left;
+}
+.topbig>dl{
+    float:left;
+}
+.topbig .topshow{
+    float:left;
+}
+.topbig .topshow dl{
+    float:left;
+}
+
+
+
+
+#footer{
+    background:#000;
+    height:60px;
+}
+#footer .info{
+    position:relative;
+    width:108px;
+    height:35px;
+    margin-top:13px;
+    margin-left:20px;
+    overflow: hidden;
+    float:left;
+}
+#footer .info .wailian{
+    position:absolute;
+    width:590px;
+    left:0;
+    top:0;
+}
+#footer .info .wailian li{
+    float:left;
+    margin-right:10px;
+}
+#footer .info .wailian li a{
+    float:left;
+}
+#footer .lianjie{
+    float:right;
+    margin-top:24px;
+}
+#footer .lianjie li{
+    float:left;
+    padding:0 16px;
+    color:#666666;
+    border-left:1px solid #5b5b5b;
+}
+#footer .lianjie li:nth-child(1){
+    padding-left:0;
+    border:none;
+}
+#footer .lianjie li a{
+    float:left;
+    color:#666666;
+}
+
+#section{
+    width:80px;
+    position:fixed;
+    right:10px;
+    bottom:90px;
+    background:#fff;
+    cursor: pointer;
+}
+#section li{
+    font-size:12px;
+    color:#4d4d4d;
+    padding:8px;
+    text-align:center;
+}
+#section li:nth-child(2){
+    border-top:1px solid #f2f2f2;
+    border-bottom:1px solid #f2f2f2;
+}
+#section li a{
+    font-size:12px;
+    line-height:16px;
+    color:#4d4d4d;
+    text-align:center;
+}
+#section .weixin{
+    position:relative;
+}
+#section .weixin .erweima{
+    position:absolute;
+    right:80px;
+    top:-125px;
+    display:none;
+}

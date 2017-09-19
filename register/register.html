@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>用户注册</title>
+    <link rel="icon" href="../Title.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../common.css"/>
+    <link rel="stylesheet" type="text/css" href="register.css"/>
+    <script src="../jquery-1.11.3.js"></script>
+    <script src="jquery.validate.js"></script>
+    <script src="jquery.validate.messages_zh.js"></script>
+    <script src="register.js"></script>
+</head>
+<body>
+    <div id="top"></div>
+    <div id="main">
+        <div class="main_inner">
+            <p>用户注册</p>
+            <div class="register clearfix">
+                <div class="register_left">
+                    <form>
+                        <p>用户名</p>
+                        <input type="text" name="user" placeholder="建议使用常用手机" required="true" phone="true" class="error"/>
+                        <p>密码</p>
+                        <input type="text" name="password" required="true" id="password" class="error"/>
+                        <p>确认密码</p>
+                        <input type="text" name="confirm" required="true" equalTo="#password" class="error"/>
+                        <p>验证码</p>
+                        <input type="text" name="yzm" id="yzm" required="true" equalTo="#field" class="error"/>
+                        <input id="field" value="" disabled="disabled"/><i>看不清,点我更换</i>
+                        <p class="p1"><input type="checkbox" checked="checked"/>我同意 <a href="">聚风尚在线服务协议</a></p>
+                        <input type="submit" id="btn" value="注册"/>
+                        <p>我已注册 <a href="../login/login.html">立即登录</a></p>
+                    </form>
+                </div>
+                <div class="register_right">
+                    <p>使用合作伙伴登录免注册</p>
+                    <ul class="clearfix">
+                        <li><a href=""><img src="img/6.png"/>QQ登录</a></li>
+                        <li><a href=""><img src="img/7.png"/>新浪微博</a></li>
+                        <li><a href=""><img src="img/8.png"/>支付宝</a></li>
+                        <li><a href=""><img src="img/9.png"/>银联在线</a></li>
+                    </ul>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+    <ul id="section"></ul>
+    <div id="loading">
+        <img src='img/18.png'/>
+        <h1>注册成功！</h1>
+        <h2>已为您自动登录,3秒后跳转至首页...</h2>
+    </div>
+</body>
+</html>
