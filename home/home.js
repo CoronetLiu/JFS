@@ -2,7 +2,7 @@
 * @Author: Marte
 * @Date:   2017-09-14 22:51:53
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-19 21:42:35
+* @Last Modified time: 2017-09-20 18:12:27
 */
 
 // 'use strict';
@@ -82,12 +82,5 @@ $(function(){
 
     new Banner($(".pic")[0],$(".indicator")[0]);
 
-
-    $.ajax({
-        url:"http://10.9.171.178/work/jfs/home/1.php",
-        data:new Date().getTime()
-    }).then(function(res){
-        console.log(res);
-    })
 
 })//
