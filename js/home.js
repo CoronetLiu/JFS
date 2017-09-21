@@ -1,8 +1,8 @@
 /*
-* @Author: Marte
+* @Author: CoronetLiu
 * @Date:   2017-09-14 22:51:53
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-21 12:32:12
+* @Last Modified time: 2017-09-21 19:00:01
 */
 
 // 'use strict';
@@ -29,7 +29,14 @@ $(function(){
             $(".erweima").stop().fadeOut();
         })
     });
-    //*********nav***********//
+    //**********top二维码*********//
+    // console.log($(".code"));
+    $(".acode").hover(function(){
+        $(".code").stop().fadeIn();
+    },function(){
+        $(".code").stop().fadeOut();
+    })
+    //*********nav a***********//
     // console.log($(".nav"))
     $(".nav").children("li").hover(function(){
         // console.log(this);
@@ -64,59 +71,54 @@ $(function(){
         $(".probig").eq($(this).index()).addClass('cur').siblings('.probig').removeClass('cur');
     })
 
-
-
-    //**********轮播图********//
-    function Banner(pic,indicator){
-        this.pic = pic;
-        this.indicator = indicator;
-        this.index = 0;
-        this.autoplay();
-    }
-    Banner.prototype.autoplay = function(){
-        var that = this;
-        this.timer = setInterval(function(){
-            that.change();
-            if(that.index == that.pic.children.length - 1){
-                that.index = 0;
-            }else{
-                that.index ++;
-            }
-
-        },3000);
-        this.indicator.onmouseover = function(event){
-            clearInterval(that.timer);
-            var e = event || window.event;
-            var src = e.srcElement || e.target;
-            for(var i = 0;i < that.pic.children.length;i ++){
-                if(src == that.indicator.children[i]){
-                    that.index = i;
-                    that.change();
-                }
-            }
+    //***************资讯轮播************//
+    class zxBanner{
+        constructor(pic,indicator){
+            this.pic = pic;
+            this.indicator = indicator;
+            this.index = 0;
         }
-        this.indicator.onmouseout = function(){
-            that.timer = setInterval(function(){
+        autoplay(){
+            var that = this;
+            this.timer = setInterval(function(){
                 that.change();
                 if(that.index == that.pic.children.length - 1){
                     that.index = 0;
                 }else{
                     that.index ++;
                 }
-
-            },3000);
+            },1000);
+            this.indicator.onclick = function(event){
+                var e = event || window.event;
+                var src = e.srcElement || e.target;
+                for(var i = 0;i < that.pic.children.length;i ++){
+                    if(src == that.indicator.children[i]){
+                        that.index = i;
+                        that.change();
+                    }
+                }
+            }
         }
-    }
-    Banner.prototype.change = function(){
-        for(var i = 0;i < this.pic.children.length;i ++){
-            this.pic.children[i].style.opacity = 0;
-            this.indicator.children[i].className = "";
+        change(){
+            $(this.pic).children("li").eq(this.index).css({
+                opacity:1
+            }).siblings("li").css({
+                opacity:0
+            })
+            $(this.indicator).children("span").eq(this.index).addClass('cur').siblings().removeClass('cur');
+            $(".zx_left").children("div").eq(this.index).addClass('cur').siblings('div').removeClass('cur');
         }
-        this.pic.children[this.index].style.opacity = 1;
-        this.indicator.children[this.index].className = "active";
+
     }
 
-    new Banner($(".pic")[0],$(".indicator")[0]);
+    new zxBanner($(".zx_left ul").get(0),$(".zx_left ul div").get(0)).autoplay();
+    console.log($(".zx_left ul"),$(".zx_left ul div"))
 
+    //*************bottom扫码*******************//
+    $(".bottom_right ul").children("li").eq(2).hover(function(){
+        $(".saoma").stop().fadeIn();
+    },function(){
+        $(".saoma").stop().fadeOut();
+    })
 
 })//

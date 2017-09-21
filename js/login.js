@@ -1,8 +1,8 @@
 /*
-* @Author: Marte
+* @Author: CoronetLiu
 * @Date:   2017-09-14 17:30:55
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-21 12:34:03
+* @Last Modified time: 2017-09-21 17:44:21
 */
 
 // 'use strict';
@@ -107,9 +107,10 @@ $(function(){
                             $("input[name=password]").css({
                                 borderColor:""
                             });
-                            $("#loading").css({
-                                display:"block"
-                            })
+                            // $("#loading").css({
+                            //     display:"block"
+                            // })
+                            new Toast().init();
                             setTimeout(function(){
                                 window.location.href = "../html/home.html";
                             },3000)
@@ -128,5 +129,21 @@ $(function(){
         }
 
     })
+
+
+    //弹出提示
+    class Toast{
+        constructor(){
+        }
+        init(){
+            if(!Toast.div){
+                Toast.div = document.createElement("div");
+                Toast.div.id = "loading";
+                Toast.div.innerHTML = "<img src='../img/18.png'/><h1>登录成功！</h1><h2>3秒后跳转至首页...</h2>"
+                document.body.appendChild(Toast.div);
+            }
+            $(Toast.div).stop().show();
+        }
+    }
 
 })

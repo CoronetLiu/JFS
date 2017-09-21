@@ -1,8 +1,8 @@
 /*
-* @Author: Marte
+* @Author: CoronetLiu
 * @Date:   2017-09-14 22:54:38
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-21 12:33:47
+* @Last Modified time: 2017-09-21 17:44:31
 */
 
 // 'use strict';
@@ -52,9 +52,9 @@ $(function(){
         var password = $("input[name=password]").val();
         if(index == 0){//第一次点击
             index = 1;
-            console.log($("input").hasClass("error"),0);
+            // console.log($("input").hasClass("error"),0);
             if($("input").hasClass("error")){//如果有错填项
-                console.log(1);
+                // console.log(1);
                 $.ajax({
                     url:"http://datainfo.duapp.com/shopdata/userinfo.php",
                     data:{
@@ -65,7 +65,7 @@ $(function(){
                     type:"POST"
                 })
                 .then(function(res){
-                    console.log(res)
+                    // console.log(res)
                     $("#btn").attr("value","注册");
                     switch(res){
                         case "0":
@@ -95,7 +95,7 @@ $(function(){
         }else{//不是第一次点击
             console.log(!$("input").hasClass("error"),1);
             if(!$("input").hasClass("error")){//如果全部正确
-                console.log(2);
+                // console.log(2);
                 $.ajax({
                     url:"http://datainfo.duapp.com/shopdata/userinfo.php",
                     data:{
@@ -106,7 +106,7 @@ $(function(){
                     type:"POST"
                 })
                 .then(function(res){
-                    console.log(res)
+                    // console.log(res)
                     $("#btn").attr("value","注册");
                     switch(res){
                         case "0":
@@ -118,9 +118,7 @@ $(function(){
                                 $("label[for=user]").css({
                                     display:"none"
                                 }).html("");
-                                $("#loading").css({
-                                    display:"block"
-                                });
+                                new Toast().init();
                                 setTimeout(function(){
                                     window.location.href = "../html/home.html";
                                 },3000)
@@ -150,5 +148,22 @@ $(function(){
         // console.log(1);
         $("#field").attr("value",codeRandom());
     })
+
+
+
+    //弹出提示
+    class Toast{
+        constructor(){
+        }
+        init(){
+            if(!Toast.div){
+                Toast.div = document.createElement("div");
+                Toast.div.id = "loading";
+                Toast.div.innerHTML = "<img src='../img/18.png'/><h1>注册成功！</h1><h2>已为您自动登录,3秒后跳转至首页...</h2>"
+                document.body.appendChild(Toast.div);
+            }
+            $(Toast.div).stop().show();
+        }
+    }
 
 })

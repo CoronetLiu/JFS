@@ -1,8 +1,8 @@
 /*
-* @Author: Marte
+* @Author: CoronetLiu
 * @Date:   2017-09-14 22:52:05
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-21 12:42:44
+* @Last Modified time: 2017-09-21 21:07:34
 */
 
 .top_inner,.banner_inner,.cata,.recommand,.topbrands,.probrands,.zixun{
@@ -31,7 +31,7 @@
     color:#a7a7a7;
     padding:0 10px;
     border-left:1px solid #5b5b5b;
-    line-height:14px;
+    line-height:20px;
 }
 .top_inner .myinfo li a{
     color:#a7a7a7;
@@ -50,8 +50,9 @@
 .top_inner .myinfo .start .code{
     display:none;
     position:absolute;
-    left:-74px;
-    top:8px;
+    z-index:10;
+    left:-60px;
+    top:14px;
 }
 .top_inner .myinfo li:nth-child(4){
     padding-left:20px;
@@ -63,7 +64,7 @@
 }
 .top_inner .nav{
     float:left;
-    margin-top:35px;
+    margin-top:30px;
     margin-left:50px;
 }
 .top_inner .nav li{
@@ -80,7 +81,7 @@
 
 .top_inner .search{
     float:right;
-    margin-top:35px;
+    margin-top:30px;
 }
 .top_inner .search input{
     height:25px;
@@ -572,7 +573,7 @@
     top:0;
     opacity:0;
 }
-.zx_left ul li:nth-child(1){
+.zx_left ul li .active{
     opacity:1;
 }
 .zx_left ul div{
@@ -615,6 +616,9 @@
     line-height:30px;
     color:#666666;
 }
+.zx_left>div h2 a:hover{
+    color:#d2691e;
+}
 .zx_left>div p{
     width:450px;
     padding:5px 20px 0 30px;
@@ -650,6 +654,9 @@
 .zx_center dl dd a{
     font-size:12px;
 }
+.zx_center dl dd a:hover{
+    color:#db7e1e;
+}
 .zx_right{
     float:left;
     width:340px;
@@ -669,6 +676,9 @@
     font-size:12px;
     color:#b4b4b2;
     line-height:25px;
+}
+.zx_right:hover p a{
+    color:#d2691e;
 }
 #bottom{
     background:#121212;
@@ -707,6 +717,9 @@
 .bottom_left>ul>li ul li a{
     font-size:12px;
     color:#666666;
+}
+.bottom_left>ul>li ul li a:hover{
+    color:#d2691e;
 }
 .bottom_right{
     float:left;
