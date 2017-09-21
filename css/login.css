@@ -1,0 +1,89 @@
+/*
+* @Author: Marte
+* @Date:   2017-09-14 09:51:43
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-21 12:38:38
+*/
+
+#main{
+    background:#f2f2f2;
+}
+.main_inner{
+    padding-top:60px;
+    padding-bottom:110px;
+}
+.main_inner>p{
+    height:40px;
+    line-height:40px;
+    padding-left:30px;
+    background:url("../img/4.png") no-repeat left center;
+    font-size:18px;
+    color:#666666;
+}
+.login{
+    padding:30px;
+    background:#fff;
+    border:1px solid #e3e3e3;
+    border-top:3px solid #7c9bdb;
+}
+.login_left{
+    float:left;
+    padding-bottom:50px;
+}
+.login_left p{
+    height:25px;
+    line-height:25px;
+    font-size:12px;
+}
+.login_left p .tips{
+    margin-left:20px;
+    color:red;
+}
+.login_left p a{
+    font-size:12px;
+    color:#4d67a0;
+}
+.login_left input{
+    height:48px;
+    width:370px;
+    border:none;
+    outline:none;
+    border:1px solid #cccccc;
+    font-size:18px;
+    padding-left:8px;
+}
+.login_left>a{
+    display:inline-block;
+    height:50px;
+    width:380px;
+    background:#4d67a0;
+    color:#fff;
+    font-size:24px;
+    line-height:50px;
+    text-align: center;
+}
+.login_right{
+    float:right;
+    padding-bottom:50px;
+}
+.login_bottom{
+    padding-top:20px;
+    padding-left:50px;
+    border-top:1px solid #e3e3e3;
+}
+.login_bottom>p{
+    font-size:14px;
+    color:#666666;
+}
+.login_bottom ul{
+    padding-top:10px;
+}
+.login_bottom ul li{
+    float:left;
+    margin-right:20px;
+}
+.login_bottom ul li a{
+    float:left;
+    color:#7e7e7e;
+    text-align:center;
+}
