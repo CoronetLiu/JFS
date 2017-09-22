@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-15 19:37:55
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-21 17:43:01
+* @Last Modified time: 2017-09-22 15:39:37
 */
 
 .top_inner,.main_inner{
@@ -91,6 +91,9 @@
 #footer .lianjie li a{
     float:left;
     color:#666666;
+}
+#footer .lianjie li a:hover{
+    color:#d2691e;
 }
 #loading{
     width:480px;

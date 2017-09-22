@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-14 22:54:38
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-21 17:44:31
+* @Last Modified time: 2017-09-22 16:07:49
 */
 
 // 'use strict';
@@ -37,6 +37,9 @@ $(function(){
         })
         $(".weixin").mouseout(function(){
             $(".erweima").stop().fadeOut();
+        })
+        $("#section").children("li").eq(2).on("click",function(){
+            document.documentElement.scrollTop = 0;
         })
     });
 
@@ -77,9 +80,7 @@ $(function(){
                                 $("label[for=user]").css({
                                     display:"none"
                                 }).html("");
-                                $("#loading").css({
-                                    display:"block"
-                                });
+                                new Toast().init();
                                 setTimeout(function(){
                                     window.location.href = "../html/home.html";
                                 },3000)
@@ -88,7 +89,7 @@ $(function(){
                                 break;
                     }
                 },function(a,b,c){
-                    alert("未知错误！")
+                    alert("服务器炸了")
                 })//ajax 结束
                 return false;
             }
@@ -127,7 +128,7 @@ $(function(){
                                 break;
                     }
                 },function(a,b,c){
-                    alert("未知错误！")
+                    alert("服务器炸了")
                 })//ajax 结束
                 return false;
             }

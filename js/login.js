@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-14 17:30:55
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-21 17:44:21
+* @Last Modified time: 2017-09-22 16:07:30
 */
 
 // 'use strict';
@@ -37,6 +37,11 @@ $(function(){
         })
         $(".weixin").mouseout(function(){
             $(".erweima").stop().fadeOut();
+        })
+        // console.log($("#section").children("li").eq(2));
+        // console.log(document.documentElement.scrollTop);
+        $("#section").children("li").eq(2).on("click",function(){
+            document.documentElement.scrollTop = 0;
         })
     });
 
@@ -107,16 +112,13 @@ $(function(){
                             $("input[name=password]").css({
                                 borderColor:""
                             });
-                            // $("#loading").css({
-                            //     display:"block"
-                            // })
                             new Toast().init();
                             setTimeout(function(){
                                 window.location.href = "../html/home.html";
                             },3000)
                 }
             },function(){
-                alert("未知错误");
+                alert("服务器炸了");
             })
 
         }

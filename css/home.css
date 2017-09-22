@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-14 22:52:05
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-21 21:07:34
+* @Last Modified time: 2017-09-22 15:40:36
 */
 
 .top_inner,.banner_inner,.cata,.recommand,.topbrands,.probrands,.zixun{
@@ -807,7 +807,9 @@
     float:left;
     color:#666666;
 }
-
+#footer .lianjie li a:hover{
+    color:#d2691e;
+}
 #section{
     width:80px;
     position:fixed;

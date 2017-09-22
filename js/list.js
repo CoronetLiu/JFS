@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-21 18:03:19
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-21 19:08:15
+* @Last Modified time: 2017-09-22 16:10:26
 */
 
 // 'use strict';
@@ -27,6 +27,9 @@ $(function(){
         })
         $(".weixin").mouseout(function(){
             $(".erweima").stop().fadeOut();
+        })
+        $("#section").children("li").eq(2).on("click",function(){
+            document.documentElement.scrollTop = 0;
         })
     });
     //**********top二维码*********//
@@ -58,12 +61,83 @@ $(function(){
         })
     })
 
+    //****************** list ******************//
+    class Pagination{
+        constructor(){
+            if(!Pagination.res){
+                this.load();
+            }else{
+                this.init();
+            }
+        }
+        load(){
+            var that = this;
+            $.ajax({
+                url:"http://10.9.171.178/work/JFS/data/list.php",
+                dataType:"json"
+            })
+            .then(function(res){
+                // console.log(res);
+                Pagination.res = res;
+                // console.log(Pagination.res.length);
+                that.init();
+            },function(){
+                alert("服务器故障！")
+            })
+        }
+        init(){
+            var that = this;
+            $(".pagination").pagination(Pagination.res.length,{
+                items_per_page:20, //一页显示多少条;
+                callback:function(index){
+                    that.index = index; //当前显示的页数;
+                    that.rendring();
+                    $(".pagination").children("a").attr("href","##")
+                }
+            })
+        }
+        rendring(){
+            var html = "";
+            for(var i = this.index * 20;i < (this.index + 1) * 20;i ++){
+                if(i < Pagination.res.length){
+                    html += `
+                            <dl>
+                                <dt><a href=""><img src='${Pagination.res[i].img}'/></a></dt>
+                                <dd>
+                                    <p>${Pagination.res[i].name}</p>
+                                    <h2>${Pagination.res[i].price}<span>${Pagination.res[i].oldprice}</span></h2>
+                                    <a href="">加入购物车</a>
+                                </dd>
+                            </dl>
+                            `
+                }
+            }
+            $(".list").html(html)
+        }
+    }
 
+    new Pagination();
 
+    //**************** dl hover ****************//
 
-
-
-
+    $(".list").on("mouseenter","dl",function(){
+        // console.log(this);
+        $(this).css({
+            background:"#ddd"
+        });
+        $(this).children("dd").children("a").eq(0).css({
+            display:"inline-block"
+        })
+    })
+    $(".list").on("mouseleave","dl",function(){
+        // console.log(this);
+        $(this).css({
+            background:""
+        });
+        $(this).children("dd").children("a").eq(0).css({
+            display:"none"
+        })
+    })
 
     //*************bottom扫码*******************//
     $(".bottom_right ul").children("li").eq(2).hover(function(){

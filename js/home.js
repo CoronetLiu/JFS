@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-14 22:51:53
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-21 19:00:01
+* @Last Modified time: 2017-09-22 16:33:00
 */
 
 // 'use strict';
@@ -27,6 +27,9 @@ $(function(){
         })
         $(".weixin").mouseout(function(){
             $(".erweima").stop().fadeOut();
+        })
+        $("#section").children("li").eq(2).on("click",function(){
+            document.documentElement.scrollTop = 0;
         })
     });
     //**********top二维码*********//
@@ -112,7 +115,6 @@ $(function(){
     }
 
     new zxBanner($(".zx_left ul").get(0),$(".zx_left ul div").get(0)).autoplay();
-    console.log($(".zx_left ul"),$(".zx_left ul div"))
 
     //*************bottom扫码*******************//
     $(".bottom_right ul").children("li").eq(2).hover(function(){
