@@ -1,0 +1,235 @@
+/*
+* @Author: CoronetLiu
+* @Date:   2017-09-23 18:30:06
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-09-23 22:55:41
+*/
+
+.top_inner,.main_inner{
+    width:1000px;
+    margin:0 auto;
+}
+#top{
+    background:#000000;
+}
+.top_inner>a{
+    margin:3px 0;
+    float:left;
+}
+.top_right{
+    float:right;
+    padding:25px 0;
+}
+.top_right li{
+    height:20px;
+    font-size:13px;
+    line-height: 20px;
+    color:#a5a9ac;
+    float:left;
+}
+.top_right .start{
+    margin-right:14px;
+    position:relative;
+}
+.top_right .start a{
+    display:inline-block;
+    height:20px;
+    width:20px;
+}
+.top_right .start .code{
+    position:absolute;
+    left:-80px;
+    top:12px;
+    display:none;
+}
+.top_right .end{
+    padding-left:27px;
+    border-left:1px solid #4f4f4f;
+    background:url("../img/3.png") no-repeat 12px center;
+}
+#main{
+    min-height:600px;
+    background:#f2f2f2;
+    overflow: hidden;
+    padding-bottom:25px;
+}
+.main_inner>img{
+    margin:20px 0;
+}
+.body{
+    background:#fff;
+    padding:10px 30px;
+}
+.body h2{
+    height: 30px;
+    font-size:20px;
+    line-height:30px;
+    color:#8a8a98;
+    font-weight: normal;
+    margin-bottom:10px;
+    background:url("http://www.jufengshang.com/images/cart/images/decoration_1.jpg") no-repeat right center;
+}
+.body h2 img{
+    float:left;
+    margin-top:7px;
+    margin-right:7px;
+}
+table{
+     border-collapse:collapse;
+     border-spacing:0;
+}
+table thead tr th{
+    background: #f5f5f5;
+    color: #000;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    width:90px;
+}
+table thead tr th:nth-child(3){
+    width:310px;
+}
+table tbody tr td{
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+    width:90px;
+}
+table tbody tr td:nth-child(3){
+    line-height:20px;
+    padding:0 10px;
+    text-align:left;
+}
+table tbody tr td:nth-child(2) img{
+    margin-left:20px;
+}
+table tbody tr td:nth-child(1) a,table tbody tr td:nth-child(3) a{
+    color:#185aa8;
+}
+table tbody tr td:nth-child(5),table tbody tr td:nth-child(7){
+    color:#be0503;
+}
+.goodsinfo{
+    padding:10px 0;
+}
+.goodsinfo>a{
+    display: inline-block;
+    height:30px;
+    width:100px;
+    background:#6d93d4;
+    font-size:16px;
+    color:#fff;
+    line-height:30px;
+    text-align:center;
+    margin-top:15px;
+}
+.goodsinfo .tip{
+    margin:20px 0;
+    color:#666;
+    // display: none;
+}
+.goodsinfo .tip a{
+    color:#6c8fd1;
+}
+.getinfo{
+    padding:10px 0;
+    border-top:1px dashed #cccccc;
+    border-bottom:1px dashed #cccccc;
+    display:none;
+}
+.getinfo form{
+    padding:30px;
+    background:#f7f7f7;
+    border:1px solid #e3e3e3;
+}
+.getinfo form p{
+    color:#444;
+    height:30px;
+    font-size:12px;
+    line-height:30px;
+}
+.getinfo form p input{
+    height:20px;
+    width:150px;
+    border:none;
+    border:1px solid #acadb1;
+}
+.getinfo form p:nth-child(3) input,.getinfo form p:nth-child(7) input{
+    width:400px;
+}
+.balance{
+    padding:10px 0;
+    display:none;
+}
+.balance .price{
+    padding:20px;
+    background:#e5eeff;
+}
+.balance .price p:nth-child(1){
+    font-size:14px;
+    color:#02070b;
+}
+.balance .price p:nth-child(2){
+    float:right;
+    margin-top:40px;
+    font-size:16px;
+}
+.balance .price p:nth-child(2) span{
+    font-size:18px;
+    color:#d61818;
+}
+.balance>a{
+    float:right;
+    height:50px;
+    width:210px;
+    background:#e65252;
+    color:#fff;
+    font-size:20px;
+    line-height:50px;
+    text-align:center;
+    margin-top:35px;
+}
+#footer{
+    height:60px;
+    background:#000;
+}
+#footer p{
+    font-size:14px;
+    color:#9a9a9a;
+    line-height:60px;
+    text-align: center;
+}
+#section{
+    width:80px;
+    position:fixed;
+    z-index:99;
+    right:10px;
+    bottom:90px;
+    background:#fff;
+    cursor: pointer;
+}
+#section li{
+    font-size:12px;
+    color:#4d4d4d;
+    padding:8px;
+    text-align:center;
+}
+#section li:nth-child(2){
+    border-top:1px solid #f2f2f2;
+    border-bottom:1px solid #f2f2f2;
+}
+#section li a{
+    font-size:12px;
+    line-height:16px;
+    color:#4d4d4d;
+    text-align:center;
+}
+#section .weixin{
+    position:relative;
+}
+#section .weixin .erweima{
+    position:absolute;
+    right:80px;
+    top:-125px;
+    display:none;
+}

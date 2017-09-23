@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-22 17:06:10
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-22 22:03:03
+* @Last Modified time: 2017-09-23 16:49:39
 */
 
 // 'use strict';
@@ -33,6 +33,7 @@ $(function(){
             document.documentElement.scrollTop = 0;
         })
     });
+
     //**********top二维码*********//
     // console.log($(".code"));
     $(".acode").hover(function(){
@@ -40,6 +41,7 @@ $(function(){
     },function(){
         $(".code").stop().fadeOut();
     })
+
     //*********nav a***********//
     // console.log($(".nav"))
     $(".nav").children("li").hover(function(){
@@ -61,6 +63,7 @@ $(function(){
             background:""
         })
     })
+
     //***************** 放大镜 ******************//
     function Magnifier(){
         this.position = $(".position").get(0);
@@ -128,7 +131,52 @@ $(function(){
 
     })
 
+    //***************** 购买数量 ************************//
+    $("#add").on("click",function(){
+        // console.log($("#sum").val());
+        var sum = parseInt($("#sum").val());
+        $("#sum").attr("value",sum + 1);
+    })
+    $("#minus").on("click",function(){
+        // console.log($("#sum").val());
+        var sum = parseInt($("#sum").val()) - 1;
+        if(sum < 1){
+            sum = 1;
+        }
+        $("#sum").attr("value",sum);
+    })
 
+    //******************猜你喜欢********************//
+    $(".bottom_header").children("li").on("click",function(){
+        // console.log(this);
+        $(this).addClass('cur').siblings('li').removeClass('cur');
+        // console.log($(this).index());
+        $(".bottom_list").eq($(this).index()).css({
+            display:"block"
+        }).siblings(".bottom_list").css({
+            display:"none"
+        })
+    })
+
+    //***************** dl hover **********************//
+    $(".bottom_list ").on("mouseenter","dl",function(){
+        // console.log(this);
+        $(this).css({
+            background:"#ddd"
+        });
+        $(this).children("dd").children("a").eq(0).css({
+            display:"inline-block"
+        })
+    })
+    $(".bottom_list ").on("mouseleave","dl",function(){
+        // console.log(this);
+        $(this).css({
+            background:""
+        });
+        $(this).children("dd").children("a").eq(0).css({
+            display:"none"
+        })
+    })
 
     //*************bottom扫码*******************//
     $(".bottom_right ul").children("li").eq(2).hover(function(){
@@ -136,8 +184,5 @@ $(function(){
     },function(){
         $(".saoma").stop().fadeOut();
     })
-
-
-
 
 })//

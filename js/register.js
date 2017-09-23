@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-14 22:54:38
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-22 16:07:49
+* @Last Modified time: 2017-09-23 18:13:30
 */
 
 // 'use strict';
@@ -55,7 +55,7 @@ $(function(){
         var password = $("input[name=password]").val();
         if(index == 0){//第一次点击
             index = 1;
-            // console.log($("input").hasClass("error"),0);
+            console.log($("input").hasClass("error"),0);
             if($("input").hasClass("error")){//如果有错填项
                 // console.log(1);
                 $.ajax({

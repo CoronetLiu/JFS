@@ -24,11 +24,11 @@
                 <li>您好！请[ <a href="login.html">登录</a> | <a href="register.html">注册</a> ](赠送68元)</li>
                 <li><a href="">我的订单</a></li>
                 <li>4000508013</li>
-                <li><a href="">购物袋</a></li>
+                <li><a href="shoppingcart.html">购物袋</a></li>
             </ul>
             <ul class="nav">
                 <li><a href="home.html">首页</a></li>
-                <li><a href="">手表大全</a></li>
+                <li><a href="list.html">手表大全</a></li>
                 <li><a href="">手表品牌</a></li>
                 <li><a href="">品牌旗舰店</a></li>
                 <li><a href="">名表资讯</a></li>
@@ -68,26 +68,191 @@
                         <p>服务<a href="">正品保证</a><a href="">全球联保</a><a href="">免运费</a><a href="">分期付款</a></p>
                     </div>
                     <div class="infobuy">
-                        <p>颜色<input type="checkbox" checked="checked" disabled="disabled"/></p>
-                        <p>购买数量<button>-</button><input type="text" value="1" disabled="disabled"><button>+</button></p>
-                        <a href="">立即购买</a>
+                        <div>
+                            <div>颜色</div>
+                            <a href=""><img src="../img/37.png"/></a>
+                            <img src="../img/45.png"/>
+                        </div>
+                        <p>购买数量<button id="minus">-</button><input type="text" value="1" disabled="disabled" id="sum"/><button id="add">+</button></p>
+                        <a href="shoppingcart.html">立即购买</a>
                         <a href="">加入购物袋</a>
                         <p><a href="">收藏商品</a><a href="">分享商品</a></p>
                     </div>
                 </div>
-
             </div>
-            <div class="main_center"></div>
-            <div class="main_bottom"></div>
+            <div class="main_bottom">
+                <ul class="bottom_header">
+                    <li class="cur">热销推荐</li>
+                    <li>猜你喜欢</li>
+                </ul>
+                <div class="bottom_list clearfix cur">
+                    <dl>
+                        <dt><a href=""><img src='http://www.jufengshang.com/upload/201404/1404393863659426012.jpg'/></a></dt>
+                        <dd>
+                            <p>天梭力洛克系列T41.1.483.53男士自</p>
+                            <h2>￥3783<span>￥4450</span></h2>
+                            <a href=""></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href=""><img src='http://www.jufengshang.com/upload/201404/1404393831260957336.jpg'/></a></dt>
+                        <dd>
+                            <p>浪琴军旗系列L4.774.4.12.6男士自</p>
+                            <h2>￥9265<span>￥10900</span></h2>
+                            <a href=""></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href=""><img src='http://www.jufengshang.com/images/201301/source_img/14043937971171287475.jpg'/></a></dt>
+                        <dd>
+                            <p>欧米茄星座系列123.10.35.20.52</p>
+                            <h2>￥35020<span>￥41200</span></h2>
+                            <a href=""></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href=""><img src='http://www.jufengshang.com/images/201306/source_img/1404393587267910982.jpg'/></a></dt>
+                        <dd>
+                            <p>梅花宇宙系列787 S-307男士自动</p>
+                            <h2>￥8330<span>￥9800</span></h2>
+                            <a href=""></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href=""><img src='http://www.jufengshang.com/upload/s_201411/14170524549.jpg'/></a></dt>
+                        <dd>
+                            <p>巴塞尔新款【德国】朗坤海洋系列</p>
+                            <h2>￥2947<span>￥3466</span></h2>
+                            <a href=""></a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="bottom_list clearfix">
+                    <dl>
+                        <dt><a href=""><img src='http://www.jufengshang.com/upload/201404/14043939481072230938.jpg'/></a></dt>
+                        <dd>
+                            <p>天梭力洛克系列T41.1.483.33男士自</p>
+                            <h2>￥3783<span>￥4450</span></h2>
+                            <a href=""></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href=""><img src='http://www.jufengshang.com/upload/201404/1404393863659426012.jpg'/></a></dt>
+                        <dd>
+                            <p>天梭力洛克系列T41.1.483.53男士自</p>
+                            <h2>￥3783<span>￥4450</span></h2>
+                            <a href=""></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href=""><img src='http://www.jufengshang.com/upload/201404/1404393947319222780.jpg'/></a></dt>
+                        <dd>
+                            <p>天梭力洛克系列T41.1.423.33男士自</p>
+                            <h2>￥3443<span>￥4050</span></h2>
+                            <a href=""></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href=""><img src='http://www.jufengshang.com/images/201211/source_img/1404393950331749277.jpg'/></a></dt>
+                        <dd>
+                            <p>天梭PRC200系列</p>
+                            <h2>￥3910<span>￥4600</span></h2>
+                            <a href=""></a>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt><a href=""><img src='http://www.jufengshang.com/images/201304/source_img/1404393406887539828.jpg'/></a></dt>
+                        <dd>
+                            <p>天梭PR100系列T049.407.16.031</p>
+                            <h2>￥3060<span>￥3600</span></h2>
+                            <a href=""></a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="main_center">
+                <div class="sectiontitle">
+                    <ul class="clearfix">
+                        <li class="cur"><a href="">商品详情</a></li>
+                        <li><a href="">正品保证</a></li>
+                        <li><a href="">用户评价</a></li>
+                        <li><a href="">问题咨询</a></li>
+                        <li><a href="">售后服务</a></li>
+                    </ul>
+                </div>
+                <div class="sectiondetail">
+                    <h1>产品参数：</h1>
+                    <ul class="clearfix">
+                        <li>性别</li>
+                        <li><a href="">男表</a></li>
+                        <li>机芯</li>
+                        <li><a href="">手动机械表</a></li>
+                        <li>表形</li>
+                        <li><a href="">圆形</a></li>
+                        <li>表带</li>
+                        <li><a href="">鳄鱼皮</a></li>
+                        <li>表盘</li>
+                        <li><a href="">珐琅</a></li>
+                        <li>表壳</li>
+                        <li><a href="">18k玫瑰金</a></li>
+                        <li>价格</li>
+                        <li><a href="">3,000,000以上</a></li>
+                        <li>系列</li>
+                        <li><a href="">Bird Repeater系列</a></li>
+                        <li>尺寸</li>
+                        <li><a href="">47mm</a></li>
+                        <li>厚度</li>
+                        <li><a href="">18.4mm</a></li>
+                        <li>表底</li>
+                        <li><a href="">透明</a></li>
+                        <li>表扣</li>
+                        <li><a href="">折叠扣</a></li>
+                        <li>表镜</li>
+                        <li><a href="">蓝宝石水晶玻璃</a></li>
+                        <li>机芯型号</li>
+                        <li><a href="">RMA88</a></li>
+                        <li>表带颜色</li>
+                        <li><a href="">黑色</a></li>
+                        <li>功能</li>
+                        <li><a href="">珐琅</a></li>
+                    </ul>
+                    <div class="jianjie clearfix">
+                        <div>
+                            <img src="http://www.jufengshang.com/upload/goods_cat/1404124878-brand_logo_new.jpg"/>
+                            <p>雅克德罗（JaquetDroz）</p>
+                        </div>
+                        <div>
+                            <p>
+                                【品牌简介】<br/>
+                                作为瑞士钟表行业最早期「特立独行」的杰出代表，雅克德罗Jaquet Droz所制作的钟表艺术珍品在欧洲宫廷及皇家广受赞誉，其举世闻名的「活动玩偶」及「过粱鸣鸟」提钟几乎成为判定一个使团外交等级高下及使命重要性的重要标识。而该品牌钟表珍品在早期东西方世界的交流中，亦曾发挥过不可替代的作用，如今在故宫钟表博物馆中收藏的雅克德罗Jaquet Droz珍品，就见证了这一品牌与中国长达200余年的传奇之交。 雅克德罗Jaquet Droz以精致制表及奢华工艺广受赞誉，尤其以「Grand Feu」大明火珐琅工艺见长。阿拉伯数字「8」作为品牌的艺术灵感源泉，寓意完美和谐，被广泛用于品牌所有系列中，与珐琅技艺一起，已然成为雅克德罗 Jaquet Droz的标识，完美诠释出品牌工艺与设计
+                            </p>
+                        </div>
+                        <div>
+                            <img src="http://www.jufengshang.com/upload/goods_cat/1404124878-brand_logo_new.jpg"/>
+                            <p>雅克德罗（JaquetDroz）</p>
+                        </div>
+                    </div>
+                    <div class="zhanshi">
+                        <div class="zs_title">
+                            <img src="http://www.jufengshang.com/images/2015/goodsDesc.jpg"/>
+                        </div>
+                        <h3>【雅克德罗J031033200 简介】</h3>
+                        <p>外观上以手工的彩瓷珐琅描绘出一幅早晨小鸟一家五口的温馨画面（两只小雏儿等待父母喂食和一只等待破壳而出的）。鸟儿色彩斑斓栩栩如生，用来孕育与呵护生命的鸟巢则采用金色，象征生命的美好。</p>
+                        <p> 18K玫瑰金表壳，直径47毫米。搭载完美手工制作的瑞士手动上弦机芯，68颗宝石轴承，三问报时功能，背透表底。若你想聆听分钟、小时的报时声响，只需轻推表壳左侧的按钮。而在你倾听美妙的声乐的同时，表盘上亦呈现动态的鸟儿哺食的画面。</p>
+                        <img src="http://www.jufengshang.com/upload/jfs/water3/13980740961600316539.jpg" alt="">
+                        <img src="http://www.jufengshang.com/upload/jfs/water3/1398074096704872630.jpg" alt="" />
+                        <img src="http://www.jufengshang.com/upload/jfs/water3/13980740961098167608.jpg" alt="" />
+                        <img src="http://www.jufengshang.com/upload/jfs/water3/1398074096697099993.jpg" alt="" />
+                        <img src="http://www.jufengshang.com/upload/jfs/water3/13980740961360485381.jpg" alt="" />
+                        <img src="http://www.jufengshang.com/upload/jfs/water3/13980740961469818008.jpg" alt="">
+                        <img src="http://www.jufengshang.com/upload/jfs/water3/1398074096395828681.jpg" alt="">
+                        <img src="http://www.jufengshang.com/upload/jfs/water3/1398074096127175649.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
-
-
-
-
-
-
-
     <div id="bottom" class="clearfix">
         <div class="bottom_left">
             <h2>服务帮助中心</h2>

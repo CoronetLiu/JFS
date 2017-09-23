@@ -3,7 +3,7 @@
  * @Author: CoronetLiu
  * @Date:   2017-09-21 17:41:25
  * @Last Modified by:   Marte
- * @Last Modified time: 2017-09-22 12:48:51
+ * @Last Modified time: 2017-09-23 14:22:18
  */
 
     $list ='[
@@ -1089,6 +1089,10 @@
                 }
              ]';
 
+    // $data = @$_REQUEST["data"];
+    // if($data == 123){
+    //     echo $list;
+    // }
 
     echo $list;
 

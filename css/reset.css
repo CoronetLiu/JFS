@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-03 19:34:30
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-21 17:43:36
+* @Last Modified time: 2017-09-23 17:31:24
 */
 input,html, body, ul, li, ol, dl,div, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; }
 
@@ -16,7 +16,7 @@ address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:norm
 
 ul, ol,dl{ list-style:none; }
 
-body { font:13px "Microsoft Yahei", 宋体, Arial, arial-black;/* overflow-y:scroll;*/ overflow-x:hidden;}
+body { font:13px "Microsoft Yahei", 宋体, Arial, arial-black;/* overflow-y:scroll;*/ overflow-x:auto;}
 
 a {color:#000000;text-decoration:none; }
 

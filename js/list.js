@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-21 18:03:19
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-22 16:10:26
+* @Last Modified time: 2017-09-23 16:11:15
 */
 
 // 'use strict';
@@ -74,6 +74,7 @@ $(function(){
             var that = this;
             $.ajax({
                 url:"http://10.9.171.178/work/JFS/data/list.php",
+                // data:{"data":123},
                 dataType:"json"
             })
             .then(function(res){
@@ -102,7 +103,7 @@ $(function(){
                 if(i < Pagination.res.length){
                     html += `
                             <dl>
-                                <dt><a href=""><img src='${Pagination.res[i].img}'/></a></dt>
+                                <dt><a href="detail.html"><img src='${Pagination.res[i].img}'/></a></dt>
                                 <dd>
                                     <p>${Pagination.res[i].name}</p>
                                     <h2>${Pagination.res[i].price}<span>${Pagination.res[i].oldprice}</span></h2>
