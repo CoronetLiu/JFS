@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-14 22:51:53
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-24 13:32:11
+* @Last Modified time: 2017-09-24 15:16:05
 */
 
 // 'use strict';
@@ -32,6 +32,11 @@ $(function(){
             document.documentElement.scrollTop = 0;
         })
     });
+
+    //************promotion************//
+    $("#close").on("click",function(){
+        $("#promotion").get(0).remove();
+    })
     //**********top二维码*********//
     // console.log($(".code"));
     $(".acode").hover(function(){
