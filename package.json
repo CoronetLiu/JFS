@@ -1,0 +1,23 @@
+{
+  "name": "jfs",
+  "version": "1.0.0",
+  "description": "聚风尚",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoronetLiu/JFS.git"
+  },
+  "author": "CoronetLiu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CoronetLiu/JFS/issues"
+  },
+  "homepage": "https://github.com/CoronetLiu/JFS#readme"
+}
