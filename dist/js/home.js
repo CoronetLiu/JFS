@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-14 22:51:53
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-24 15:16:05
+* @Last Modified time: 2017-09-25 23:04:19
 */
 
 // 'use strict';
@@ -37,6 +37,7 @@ $(function(){
     $("#close").on("click",function(){
         $("#promotion").get(0).remove();
     })
+
     //**********top二维码*********//
     // console.log($(".code"));
     $(".acode").hover(function(){
@@ -44,6 +45,21 @@ $(function(){
     },function(){
         $(".code").stop().fadeOut();
     })
+
+    //***************cart****************//
+    $("#acart").on("mouseenter",function(){
+        // console.log(1);
+        $(".mincart").css({
+            display:"block"
+        })
+    })
+    $("#acart").on("mouseleave",function(){
+        // console.log(1);
+        $(".mincart").css({
+            display:"none"
+        })
+    })
+
     //*********nav a***********//
     // console.log($(".nav"))
     $(".nav").children("li").hover(function(){

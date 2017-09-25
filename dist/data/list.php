@@ -3,125 +3,145 @@
  * @Author: CoronetLiu
  * @Date:   2017-09-21 17:41:25
  * @Last Modified by:   Marte
- * @Last Modified time: 2017-09-23 14:22:18
+ * @Last Modified time: 2017-09-25 16:57:52
  */
 
     $list ='[
                 {
+                    "id":0,
                     "img":"http://www.jufengshang.com/upload/s_201504/14284865141.jpg",
                     "name":"【德国】坤格梵蒂冈天文台系列KS702A.BG男士自动机械表",
                     "price":"￥5669",
                     "oldprice":"￥5869"
                 },
                 {
+                    "id":1,
                     "img":"http://www.jufengshang.com/images/201008/source_img/14043939481868031638.jpg",
                     "name":"天梭力洛克系列T41.1.483.52男士自动机械表（Tissot）",
                     "price":"￥3783",
                     "oldprice":"￥4450"
                 },
                 {
+                    "id":2,
                     "img":"http://www.jufengshang.com/upload/201404/14043938161566276118.jpg",
                     "name":"浪琴名匠系列L2.673.4.78.6男士自动机械表（Longines）郭富城代言",
                     "price":"￥21590",
                     "oldprice":"￥25400"
                 },
                 {
+                    "id":3,
                     "img":"http://www.jufengshang.com/upload/s_201504/14284779472.jpg",
                     "name":"坤格AMINIUM II系列KS748.HG男士自动机械表",
                     "price":"￥4046",
                     "oldprice":"￥4346"
                 },
                 {
+                    "id":4,
                     "img":"http://www.jufengshang.com/upload/s_201412/14192379779.jpg",
                     "name":"【德国】坤格 Vertigo系列 KS747.HG 男士自动机械表",
                     "price":"￥4698",
                     "oldprice":"￥4998"
                 },
                 {
+                    "id":5,
                     "img":"http://www.jufengshang.com/upload/201404/230/1404388170851339705.jpg",
                     "name":"天梭力洛克系列T41.1.483.53男士自动机械表（Tissot）",
                     "price":"￥3783",
                     "oldprice":"￥4450"
                 },
                 {
+                    "id":6,
                     "img":"http://www.jufengshang.com/upload/201404/1404393947319222780.jpg",
                     "name":"天梭力洛克系列T41.1.423.33男士自动机械表（Tissot）",
                     "price":"￥3443",
                     "oldprice":"￥4050"
                 },
                 {
+                    "id":7,
                     "img":"http://www.jufengshang.com/upload/201406/1404393944575259269.jpg",
                     "name":"天梭力洛克系列T41.1.423.53男士自动机械表（Tissot）",
                     "price":"￥3443",
                     "oldprice":"￥4050"
                 },
                 {
+                    "id":8,
                     "img":"http://www.jufengshang.com/upload/201404/230/1404388382616699555.jpg",
                     "name":"天梭力洛克系列T41.1.483.33男士自动机械表（Tissot）",
                     "price":"￥3783",
                     "oldprice":"￥4450"
                 },
                 {
+                    "id":9,
                     "img":"http://www.jufengshang.com/upload/s_201407/14046995406.jpg",
                     "name":"浪琴名匠系列L2.628.4.78.6男士自动机械表（Longines）",
                     "price":"￥13090",
                     "oldprice":"￥15400"
                 },
                 {
+                    "id":10,
                     "img":"http://www.jufengshang.com/upload/s_201503/14256236172.jpg",
                     "name":"坤格音乐家系列KS900.WG男士自动机械表（kronsegler）",
                     "price":"￥5889",
                     "oldprice":"￥6089"
                 },
                 {
+                    "id":11,
                     "img":"http://www.jufengshang.com/upload/s_201504/142847379210.jpg",
                     "name":"坤格浩渺星空系列KS734.B男士自动机械表（kronsegler）",
                     "price":"￥7899",
                     "oldprice":"￥8099"
                 },
                 {
+                    "id":12,
                     "img":"http://www.jufengshang.com/upload/201406/230/1404388378621725726.jpg",
                     "name":"天梭力洛克系列T41.1.183.53女士自动机械表（Tissot）",
                     "price":"￥3783",
                     "oldprice":"￥4450"
                 },
                 {
+                    "id":13,
                     "img":"http://www.jufengshang.com/upload/s_201504/14302932734.jpg",
                     "name":"坤格浩渺星空系列KS734.BG男士自动机械表（kronsegler）",
                     "price":"￥7599",
                     "oldprice":"￥8099"
                 },
                 {
+                    "id":14,
                     "img":"http://www.jufengshang.com/images/201304/source_img/230/1404385413504459257.jpg",
                     "name":"天梭豪致系列T086.407.11.051.00男士自动机械表（Tissot）",
                     "price":"￥5355",
                     "oldprice":"￥6300"
                 },
                 {
+                    "id":15,
                     "img":"http://www.jufengshang.com/upload/s_201407/14049816699.jpg",
                     "name":"【德国】朗坤Squad特种部队系列升级版861632N男士自动机械表",
                     "price":"￥8405",
                     "oldprice":"￥9888"
                 },
                 {
+                    "id":16,
                     "img":"http://www.jufengshang.com/upload/201407/230/1404384917966668290.jpg",
                     "name":"巴塞尔新款【德国】朗坤海洋系列850009男士自动机械表(LACO)",
                     "price":"￥2947",
                     "oldprice":"￥3466"
                 },
                 {
+                    "id":17,
                     "img":"http://www.jufengshang.com/upload/jfs/2015-04/1428475452157537922.jpg",
                     "name":"【德国】坤格 Vertigo系列 KS747.SG 男士机械表",
                     "price":"￥4888",
                     "oldprice":"￥4998"
                 },
                 {
+                    "id":18,
                     "img":"http://www.jufengshang.com/upload/s_201504/14284748636.jpg",
                     "name":"坤格音乐家系列KS900.W男士自动机械表（kronsegler）",
                     "price":"￥5589",
                     "oldprice":"￥6089"
                 },
                 {
+                    "id":19,
                     "img":"http://www.jufengshang.com/images/201108/source_img/14043934581099185162.jpg",
                     "name":"浪琴名匠系列L2.518.5.77.7男士自动机械表（Longines）",
                     "price":"￥19125",

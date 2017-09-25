@@ -8,7 +8,9 @@
     <link rel="stylesheet" type="text/css" href="../css/list.css"/>
     <script src="../libs/jquery-1.11.3.js"></script>
     <script src="../module/jquery.pagination.js"></script>
+    <script src="../module/jquery.cookie.js"></script>
     <script src="../js/list.js"></script>
+
 </head>
 <body>
     <div id="top">
@@ -25,7 +27,21 @@
                 <li>您好！请[ <a href="login.html">登录</a> | <a href="register.html">注册</a> ](赠送68元)</li>
                 <li><a href="">我的订单</a></li>
                 <li>4000508013</li>
-                <li><a href="shoppingcart.html">购物袋</a></li>
+                <li id="acart">
+                    <a href="shoppingcart.html">购物袋</a>
+                    <div class="mincart">
+                        <h2>最新加入的商品</h2>
+                        <ul>
+                            <!-- <li>
+                                <img src="http://www.jufengshang.com/upload/s_201504/14284865141.jpg"/>
+                                <a href="">【德国】坤格梵蒂冈天文台系列KS702A.BG男士自动机械表</a>
+                                <p><span>￥5669</span> × <span>1</span></p>
+                                <a href="" class="del">删除</a>
+                            </li> -->
+                        </ul>
+                        <p><span class="totalnum">0</span>件商品，共<span class="totalprice">￥0</span></p>
+                    </div>
+                </li>
             </ul>
             <ul class="nav">
                 <li><a href="home.html">首页</a></li>
@@ -172,9 +188,6 @@
 </body>
 <script type="text/javascript" src="../libs/require.js"></script>
 <script type="text/javascript">
-    require(["../module/jquery.banner.js"],function(res){
-        new Banner($(".pic")[0],$(".indicator")[0]);
-        // console.log(1);
-    })
+    require(["../libs/project"]);
 </script>
 </html>

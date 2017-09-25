@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-21 18:02:02
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-22 15:40:14
+* @Last Modified time: 2017-09-25 23:24:09
 */
 
 .top_inner,.banner_inner,.main_inner{
@@ -27,17 +27,17 @@
     width:560px;
     padding-left:440px
 }
-.top_inner .myinfo li{
+.top_inner .myinfo>li{
     float:left;
     color:#a7a7a7;
     padding:0 10px;
     border-left:1px solid #5b5b5b;
     line-height:20px;
 }
-.top_inner .myinfo li a{
+.top_inner .myinfo>li a{
     color:#a7a7a7;
 }
-.top_inner .myinfo li a:hover{
+.top_inner .myinfo>li a:hover{
     color:#fff;
 }
 .top_inner .myinfo .start{
@@ -55,14 +55,76 @@
     left:-60px;
     top:14px;
 }
-.top_inner .myinfo li:nth-child(4){
+.top_inner .myinfo>li:nth-child(4){
     padding-left:20px;
     background:url("../img/3.png") no-repeat 8px center;
 }
-.top_inner .myinfo li:nth-child(5){
+.top_inner .myinfo>li:nth-child(5){
     padding-left:25px;
     background:url("../img/20.png") no-repeat 10px center;
+    position:relative;
 }
+
+.mincart{
+    display:none;
+    position:absolute;
+    z-index:6;
+    right:-10px;
+    top:20px;
+    border:1px solid #a7a7a7;
+    background:#000;
+    padding-bottom: 10px;
+    width:330px;
+}
+.mincart h2{
+    font-size:12px;
+    line-height:40px;
+    color:#a7a7a7;
+    padding-left:10px;
+}
+.mincart ul{
+    max-height:492px;
+    overflow-y:auto;
+}
+.mincart ul li{
+    width:300px;
+    background:#343434;
+    padding:15px;
+    overflow:hidden;
+    margin-bottom:5px;
+}
+.mincart ul li img{
+    width:60px;
+    height:60px;
+    float:left;
+}
+.mincart ul li a{
+    font-size:12px;
+}
+.mincart ul li a:nth-child(2){
+    float:left;
+    margin-left:10px;
+    width:130px;
+    height:60px;
+    overflow:hidden;
+}
+.mincart ul li p{
+    width:100px;
+    float:right;
+    text-align:right;
+}
+.mincart ul li a:nth-child(4){
+    float:right;
+}
+.mincart ul li p span:nth-child(1){
+    color:#58a5db;
+}
+.mincart>p{
+    line-height:30px;
+    text-align:right;
+    padding-right:10px;
+}
+
 .top_inner .nav{
     float:left;
     margin-top:30px;
