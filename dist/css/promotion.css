@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-24 10:54:37
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-24 22:12:44
+* @Last Modified time: 2017-09-26 15:57:54
 */
 .top_inner, .register_inner, .meidi_inner, .langqin_inner, .self_inner, .parent_inner, .love_inner, .double_inner, .rule_inner, .more_inner {
   width: 1200px;
@@ -79,7 +79,7 @@
 
 #banner {
   height: 600px;
-  background: url("http://www.jufengshang.com/images/active/zhongqiu/2014/top.jpg") no-repeat top center; }
+  background: url("../img/80.png") no-repeat center center; }
 
 #register {
   background: #50146c; }

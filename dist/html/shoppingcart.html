@@ -31,9 +31,9 @@
                                 <th>商品数量</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="acart" class="tb">
                             <!-- <tr>
-                                <td><a href="">删除</a></td>
+                                <td><a href="" class="del">删除</a></td>
                                 <td><a href=""><img src="../img/37.png"/></a></td>
                                 <td><a href="">雅克德罗Bird Repeater系列J031033200男士手动机械表（Jaquet Droz）全球限量8只</a></td>
                                 <td>￥3800000</td>
@@ -88,24 +88,21 @@
                 <div class="balance clearfix">
                     <h2><img src="../img/50.png"/>结算信息</h2>
                     <div class="price clearfix">
-                        <p>商品金额： ￥3230000 元 + 运费：￥0元 + 手续费 0元 - 优惠金额：￥0元 - 优惠券：￥0 元</p>
-                        <p>应付总额：<span>￥3230000</span></p>
+                        <p>商品金额： <span class="startprice">￥3230000</span> 元 + 运费：￥0元 + 手续费 0元 - 优惠金额：￥0元 - 优惠券：￥0 元</p>
+                        <p>应付总额：<span class="endprice">￥3230000</span></p>
                     </div>
                     <a href="">确认无误 提交订单</a>
                 </div>
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
     <div id="footer">
         <p>聚风尚-奢侈品商城 粤ICP备10030670号 版权所有 Copyright©2010-2014 jufengshang.com All Right Reserved</p>
     </div>
     <ul id="section"></ul>
 </body>
+<script type="text/javascript" src="../libs/require.js"></script>
+<script type="text/javascript">
+    require(["../libs/project.shoppingcart"]);
+</script>
 </html>

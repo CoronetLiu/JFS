@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-14 22:51:53
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-25 23:04:19
+* @Last Modified time: 2017-09-26 16:45:24
 */
 
 // 'use strict';
@@ -142,6 +142,43 @@ $(function(){
         $(".saoma").stop().fadeIn();
     },function(){
         $(".saoma").stop().fadeOut();
+    })
+
+    //******************国庆倒计时**************//
+
+    function countDown(){
+        var timer = null;
+        timer = setInterval(function(){
+            var d = new Date();
+            var aim = new Date(2017,9,1);
+            var times = aim - d.getTime();
+            var day = parseInt(times / (1000 * 3600 * 24));
+            // console.log(day);
+            var hour = parseInt((times - (day * 1000 * 3600 * 24)) / (1000 * 3600)) ;
+            // console.log(hour);
+            if(hour < 10){
+                hour = "0" + hour;
+            }
+            var minute = parseInt((times - (day * 1000 * 3600 * 24) - (hour * 1000 * 3600)) / (1000 * 60));
+            // console.log(minute);
+            if(minute < 10){
+                minute = "0" + minute;
+            }
+            var second = parseInt((times - (day * 1000 * 3600 * 24) - (hour * 1000 * 3600) - (minute * 1000 * 60)) / 1000);
+            // console.log(second);
+            if(second < 10){
+                second = "0" + second;
+            }
+            $(".day").html(day);
+            $(".hour").html(hour);
+            $(".minute").html(minute);
+            $(".second").html(second);
+        },1000)
+    }
+    new countDown();
+    $("#countdown").on("click",function(){
+        console.log(this);
+        this.remove();
     })
 
 })//

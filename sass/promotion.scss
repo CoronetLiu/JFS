@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-24 10:54:37
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-24 22:12:44
+* @Last Modified time: 2017-09-26 15:57:54
 */
 $background:#50146c #100726 #50146c;
 
@@ -101,7 +101,7 @@ $background:#50146c #100726 #50146c;
 }
 #banner{
     height:600px;
-    background:url("http://www.jufengshang.com/images/active/zhongqiu/2014/top.jpg") no-repeat top center;
+    background:url("../img/80.png") no-repeat center center;
 }
 #register{
     background:nth($background,1);

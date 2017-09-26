@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-21 18:02:02
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-25 23:24:09
+* @Last Modified time: 2017-09-26 17:03:37
 */
 
 .top_inner,.banner_inner,.main_inner{
@@ -109,12 +109,14 @@
     overflow:hidden;
 }
 .mincart ul li p{
-    width:100px;
+    width:90px;
     float:right;
     text-align:right;
+    padding-right:10px;
 }
 .mincart ul li a:nth-child(4){
     float:right;
+    margin-right:10px;
 }
 .mincart ul li p span:nth-child(1){
     color:#58a5db;
@@ -122,7 +124,7 @@
 .mincart>p{
     line-height:30px;
     text-align:right;
-    padding-right:10px;
+    padding-right:20px;
 }
 
 .top_inner .nav{

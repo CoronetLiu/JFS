@@ -1,15 +1,13 @@
 /*
 * @Author: CoronetLiu
-* @Date:   2017-09-25 21:07:43
+* @Date:   2017-09-26 10:06:06
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-25 22:47:00
+* @Last Modified time: 2017-09-26 16:08:33
 */
 
 // 'use strict';
-define(["../module/jquery.banner","../module/pagination","../module/cart"],function(res,pagination,cart){
+define(["../module/cart"],function(cart){
     console.log(1);
-    new Banner($(".pic")[0],$(".indicator")[0]);
-
     class Project{
         constructor(){
             if(Project.res){
@@ -35,10 +33,8 @@ define(["../module/jquery.banner","../module/pagination","../module/cart"],funct
             })
         }
         init(res){
-            pagination.init(res);
             cart.init(res);
         }
-
     }
     new Project();
 })

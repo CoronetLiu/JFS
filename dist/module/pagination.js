@@ -18,16 +18,14 @@ define(function(){
             var html = "";
             for(var i = this.index * 20;i < (this.index + 1) * 20;i ++){
                 if(i < Pagination.res.length){
-                    html += `
-                            <dl>
+                    html += `<dl>
                                 <dt><a href="detail.html"><img src='${Pagination.res[i].img}'/></a></dt>
                                 <dd>
                                     <p>${Pagination.res[i].name}</p>
                                     <h2>${Pagination.res[i].price}<span>${Pagination.res[i].oldprice}</span></h2>
                                     <a href="" class="put" id="${Pagination.res[i].id}">加入购物车</a>
                                 </dd>
-                            </dl>
-                            `
+                            </dl>`
                 }
             }
             $(".list").html(html);

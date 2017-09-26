@@ -2,11 +2,10 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-21 14:11:13
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-21 17:44:49
+* @Last Modified time: 2017-09-26 16:09:18
 */
 
 // 'use strict';
-
 //**********轮播图********//
     function Banner(pic,indicator){
         this.pic = pic;
@@ -23,7 +22,6 @@
             }else{
                 that.index ++;
             }
-
         },2000);
         this.indicator.onmouseover = function(event){
             clearInterval(that.timer);
@@ -44,7 +42,6 @@
                 }else{
                     that.index ++;
                 }
-
             },2000);
         }
     }

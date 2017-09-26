@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-23 18:30:06
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-23 22:55:41
+* @Last Modified time: 2017-09-26 11:29:33
 */
 
 .top_inner,.main_inner{
@@ -94,6 +94,10 @@ table tbody tr td{
     line-height: 90px;
     text-align: center;
     width:90px;
+}
+table tbody tr img{
+    width:50px;
+    height:50px;
 }
 table tbody tr td:nth-child(3){
     line-height:20px;

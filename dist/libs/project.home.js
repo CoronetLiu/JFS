@@ -2,14 +2,13 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-25 21:07:43
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-25 22:49:23
+* @Last Modified time: 2017-09-26 16:07:47
 */
 
 // 'use strict';
 define(["../module/jquery.banner","../module/cart"],function(res,cart){
     console.log(1);
     new Banner($(".pic")[0],$(".indicator")[0]);
-
     class Project{
         constructor(){
             if(Project.res){
@@ -37,7 +36,6 @@ define(["../module/jquery.banner","../module/cart"],function(res,cart){
         init(res){
             cart.init(res);
         }
-
     }
     new Project();
 })
