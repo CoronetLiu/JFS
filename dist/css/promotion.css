@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-24 10:54:37
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-26 15:57:54
+* @Last Modified time: 2017-09-26 18:09:33
 */
 .top_inner, .register_inner, .meidi_inner, .langqin_inner, .self_inner, .parent_inner, .love_inner, .double_inner, .rule_inner, .more_inner {
   width: 1200px;
@@ -339,3 +339,27 @@
       right: 80px;
       top: -125px;
       display: none; }
+
+#countdown {
+  width: 400px;
+  position: fixed;
+  z-index: 24;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: #440106;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer; }
+  #countdown p {
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center; }
+    #countdown p span {
+      display: inline-block;
+      height: 50px;
+      width: 30px;
+      color: #f90013;
+      line-height: 50px;
+      font-weight: bold; }

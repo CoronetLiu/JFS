@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-24 10:58:11
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-24 22:11:45
+* @Last Modified time: 2017-09-26 18:10:30
 */
 
 // 'use strict';
@@ -46,6 +46,42 @@ $(function(){
     })
     $("#section").children("li").eq(2).on("click",function(){
         document.documentElement.scrollTop = 0;
+    })
+
+    //******************国庆倒计时**************//
+    function countDown(){
+        var timer = null;
+        timer = setInterval(function(){
+            var d = new Date();
+            var aim = new Date(2017,9,1);
+            var times = aim - d.getTime();
+            var day = parseInt(times / (1000 * 3600 * 24));
+            // console.log(day);
+            var hour = parseInt((times - (day * 1000 * 3600 * 24)) / (1000 * 3600)) ;
+            // console.log(hour);
+            if(hour < 10){
+                hour = "0" + hour;
+            }
+            var minute = parseInt((times - (day * 1000 * 3600 * 24) - (hour * 1000 * 3600)) / (1000 * 60));
+            // console.log(minute);
+            if(minute < 10){
+                minute = "0" + minute;
+            }
+            var second = parseInt((times - (day * 1000 * 3600 * 24) - (hour * 1000 * 3600) - (minute * 1000 * 60)) / 1000);
+            // console.log(second);
+            if(second < 10){
+                second = "0" + second;
+            }
+            $(".day").html(day);
+            $(".hour").html(hour);
+            $(".minute").html(minute);
+            $(".second").html(second);
+        },1000)
+    }
+    new countDown();
+    $("#countdown").on("click",function(){
+        console.log(this);
+        this.remove();
     })
 
 })//
