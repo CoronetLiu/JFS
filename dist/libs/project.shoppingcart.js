@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-26 10:06:06
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-26 16:08:33
+* @Last Modified time: 2017-09-28 09:40:54
 */
 
 // 'use strict';
@@ -19,7 +19,7 @@ define(["../module/cart"],function(cart){
         load(){
             var that = this;
             $.ajax({
-                url:"http://10.9.171.178/work/JFS/dist/data/list.php",
+                url:"http://localhost/work/JFS/dist/data/list.php",
                 // data:{"data":123},
                 dataType:"json"
             })

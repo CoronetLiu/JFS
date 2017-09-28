@@ -2,14 +2,14 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-21 18:03:19
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-25 22:29:57
+* @Last Modified time: 2017-09-28 09:37:44
 */
 
 // 'use strict';
 $(function(){
 
      //加载html
-    $("#footer").load("http://10.9.171.178/work/JFS/dist/html/footer.html",{data:new Date().getTime()},function(){
+    $("#footer").load("http://localhost/work/JFS/dist/html/footer.html",{data:new Date().getTime()},function(){
         $(".info").mouseover(function(){
             $(this).stop().animate({
                 width:590,
@@ -21,7 +21,7 @@ $(function(){
             })
         })
     });
-    $("#section").load("http://10.9.171.178/work/JFS/dist/html/section.html",{data:new Date().getTime()},function(){
+    $("#section").load("http://localhost/work/JFS/dist/html/section.html",{data:new Date().getTime()},function(){
         $(".weixin").mouseover(function(){
             $(".erweima").stop().fadeIn();
         })
@@ -89,7 +89,7 @@ $(function(){
     //     load(){
     //         var that = this;
     //         $.ajax({
-    //             url:"http://10.9.171.178/work/JFS/dist/data/list.php",
+    //             url:"http://localhost/work/JFS/dist/data/list.php",
     //             // data:{"data":123},
     //             dataType:"json"
     //         })

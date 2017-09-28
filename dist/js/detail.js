@@ -2,7 +2,7 @@
 * @Author: CoronetLiu
 * @Date:   2017-09-22 17:06:10
 * @Last Modified by:   Marte
-* @Last Modified time: 2017-09-24 13:31:52
+* @Last Modified time: 2017-09-28 09:43:43
 */
 
 // 'use strict';
@@ -10,7 +10,7 @@
 $(function(){
 
      //加载html
-    $("#footer").load("http://10.9.171.178/work/JFS/dist/html/footer.html",{data:new Date().getTime()},function(){
+    $("#footer").load("http://localhost/work/JFS/dist/html/footer.html",{data:new Date().getTime()},function(){
         $(".info").mouseover(function(){
             $(this).stop().animate({
                 width:590,
@@ -22,7 +22,7 @@ $(function(){
             })
         })
     });
-    $("#section").load("http://10.9.171.178/work/JFS/dist/html/section.html",{data:new Date().getTime()},function(){
+    $("#section").load("http://localhost/work/JFS/dist/html/section.html",{data:new Date().getTime()},function(){
         $(".weixin").mouseover(function(){
             $(".erweima").stop().fadeIn();
         })
